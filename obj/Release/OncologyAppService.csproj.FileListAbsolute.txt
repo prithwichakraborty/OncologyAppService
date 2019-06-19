@@ -1,0 +1,12 @@
+C:\Users\pchakrab\source\repos\OncologyAppService\OncologyAppService\bin\OncologyAppService.dll.config
+C:\Users\pchakrab\source\repos\OncologyAppService\OncologyAppService\bin\OncologyAppService.dll
+C:\Users\pchakrab\source\repos\OncologyAppService\OncologyAppService\bin\OncologyAppService.pdb
+C:\Users\pchakrab\source\repos\OncologyAppService\OncologyAppService\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\pchakrab\source\repos\OncologyAppService\OncologyAppService\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\pchakrab\source\repos\OncologyAppService\OncologyAppService\obj\Release\OncologyAppService.csproj.CoreCompileInputs.cache
+C:\Users\pchakrab\source\repos\OncologyAppService\OncologyAppService\obj\Release\OncologyAppService.dll
+C:\Users\pchakrab\source\repos\OncologyAppService\OncologyAppService\obj\Release\OncologyAppService.pdb
+C:\Users\pchakrab\source\repos\OncologyAppService\OncologyAppService\bin\Newtonsoft.Json.dll
+C:\Users\pchakrab\source\repos\OncologyAppService\OncologyAppService\bin\Newtonsoft.Json.pdb
+C:\Users\pchakrab\source\repos\OncologyAppService\OncologyAppService\bin\Newtonsoft.Json.xml
+C:\Users\pchakrab\source\repos\OncologyAppService\OncologyAppService\obj\Release\OncologyAppService.csprojResolveAssemblyReference.cache
