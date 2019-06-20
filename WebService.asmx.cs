@@ -627,8 +627,8 @@ namespace OncologyAppService
                         item.Height = Convert.ToInt64(reader["height"].ToString().Trim());
                         item.Platelets = Convert.ToInt64(reader["hb"].ToString().Trim());
                         item.Hb = Convert.ToInt64(reader["platelets"].ToString().Trim());
-                        item.Wcc = Convert.ToDouble(reader["wcc"].ToString().Trim());
-                        item.Neutrophils = Convert.ToDouble(reader["neutrophils"].ToString().Trim());
+                        //item.Wcc = Convert.ToDouble(reader["wcc"].ToString().Trim());
+                        //item.Neutrophils = Convert.ToDouble(reader["neutrophils"].ToString().Trim());
                         item.Date = reader["date_created"].ToString().Trim();
 
                         DateTime temp = Convert.ToDateTime(reader["date_created"].ToString());
@@ -660,6 +660,60 @@ namespace OncologyAppService
 
 
         }
+
+
+        [WebMethod]
+        [ScriptMethod(ResponseFormat = ResponseFormat.Json)]
+        public void GetWebsiteInfo()
+        {
+            
+
+
+
+            string query = @"select * from tbl_website";
+            List<TblWebsite> list = new List<TblWebsite>();
+
+            using (SqlConnection con = new SqlConnection(Global.CONN_STRING))
+            {
+                try
+                {
+                    list.Clear();
+
+                    con.Open();
+
+                    SqlCommand command = new SqlCommand(query, con);
+
+                    SqlDataReader reader = command.ExecuteReader();
+
+                    while (reader.Read())
+                    {
+                        TblWebsite item = new TblWebsite();
+
+                        item.Id = Convert.ToInt64(reader["id"].ToString().Trim());
+                        item.Website = reader["name"].ToString().Trim();
+                        item.Url = reader["url"].ToString().Trim();
+
+                        list.Add(item);
+                    }
+
+                    con.Close();
+
+                    Global.QUERY_EXECUTION_RESP = "Success";
+                }
+                catch (Exception exp)
+                {
+                    Global.QUERY_EXECUTION_RESP = exp.Message.ToString();
+                }
+
+            }
+
+
+            JavaScriptSerializer js = new JavaScriptSerializer();
+            Context.Response.Write(js.Serialize(list));
+        }
+
+
+
 
 
         #endregion

@@ -70,7 +70,6 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
-    <None Include="Properties\PublishProfiles\IanPotterAppDemo - Web Deploy.pubxml" />
     <None Include="Properties\PublishProfiles\OncologyAppService - Web Deploy.pubxml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -87,6 +86,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Data\TblContact.cs" />
+    <Compile Include="Data\TblWebsite.cs" />
     <Compile Include="Data\TblProvider.cs" />
     <Compile Include="Data\TblGoal.cs" />
     <Compile Include="Data\TblBloodResult.cs" />
@@ -99,6 +99,7 @@
       <SubType>Component</SubType>
     </Compile>
   </ItemGroup>
+  <ItemGroup />
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>

@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <parameters>
-  <parameter name="DBConnString-Web.config Connection String" description="DBConnString Connection String used in web.config by the application to access the database." defaultValue="Data Source=tcp:oncappdbserver.database.windows.net;Initial Catalog=db_oncology_app;Integrated Security=False;User ID=dbadmin;Password=Oncologyapp011235@;Connect Timeout=30;Encrypt=False;TrustServerCertificate=True;ApplicationIntent=ReadWrite;MultiSubnetFailover=False" tags="SqlConnectionString">
+  <parameter name="DBConnString-Web.config Connection String" description="DBConnString Connection String used in web.config by the application to access the database." defaultValue="Data Source=tcp:oncappdbserver.database.windows.net;Initial Catalog=db_oncology_app_new;Integrated Security=False;User ID=dbadmin;Password=Oncologyapp011235@;Connect Timeout=30;Encrypt=False;TrustServerCertificate=True;ApplicationIntent=ReadWrite;MultiSubnetFailover=False" tags="SqlConnectionString">
     <parameterEntry kind="XmlFile" scope="C:\\Users\\pchakrab\\source\\repos\\OncologyAppService\\OncologyAppService\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='DBConnString']/@connectionString" />
   </parameter>
 </parameters>
